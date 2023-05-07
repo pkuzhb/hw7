@@ -5,12 +5,12 @@ add_executable(hw7 src/main.cpp src/parser.cpp)
 
 target_include_directories(hw7 PRIVATE includes)
 target_link_directories(hw7 PRIVATE lib)
-target_link_libraries(hw7 PRIVATE rjsjai.a)
+target_link_libraries(hw7 PRIVATE rjsjai)
 set_target_properties(
     hw7
     PROPERTIES  CXX_STANDARD          17
                 CXX_STANDARD_REQUIRED ON
-                RUNTIME_OUTPUT_DIRECTORY bin)
+                RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 if(MSVC)
     target_compile_options(hw7 PRIVATE /MT) 
 endif()
