@@ -1,0 +1,51 @@
+# Project Specific
+bin/
+build/
+.clang-format
+.xmake
+.cache
+compile_commands.json
+
+# Third-parties
+/includes/
+/lib/
+
+# IDE
+.vscode/
+.vs/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# OS
+.DS_Store
